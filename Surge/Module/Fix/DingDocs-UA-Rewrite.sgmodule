@@ -2,7 +2,7 @@
 #!desc= Rewrite User-Agent for DingDocs related paths
 
 [Header Rewrite]
-http-request ^https:\/\/alidocs\.dingtalk\.com\/(i|note|api)\/.* header-replace User-Agent "Mozilla/5.0 (X11; CrOS aarch64 16181.61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.198 Safari/537.36"
+http-request ^https:\/\/alidocs\.dingtalk\.com\/(i|note|spreadsheetv2|api)\/.* header-replace User-Agent "Mozilla/5.0 (X11; CrOS aarch64 16181.61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.198 Safari/537.36"
 
 [MITM]
 hostname = %APPEND% alidocs.dingtalk.com, g.alicdn.com
